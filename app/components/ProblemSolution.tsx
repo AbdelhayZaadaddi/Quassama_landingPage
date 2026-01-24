@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import PhoneImage from '../../assets/iPhone14Pro.png';
 
 export default function ProblemSolution() {
   return (
@@ -8,15 +10,15 @@ export default function ProblemSolution() {
         {/* Container for the composition */}
         <div className="relative flex flex-col items-center justify-center min-h-[500px] md:min-h-[700px]">
 
-          {/* Central Image Placeholder */}
+          {/* Central Image */}
           {/* Using a aspect ratio that mimics a landscape phone + some padding */}
-          <div className="relative w-full max-w-5xl aspect-[16/9] md:aspect-[21/9] flex items-center justify-center my-8 md:my-0">
-             <div className="w-full h-full bg-gray-50 rounded-[3rem] border-4 border-dashed border-gray-200 flex flex-col items-center justify-center text-gray-400 p-8 shadow-inner">
-                <svg className="w-20 h-20 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <p className="font-semibold text-lg">Landscape Phone Image</p>
-                <p className="text-sm">Place your image here (approx 1200x600px)</p>
+          <div className="relative w-full max-w-5xl flex items-center justify-center my-8 md:my-0">
+             <div className="w-full h-auto flex flex-col items-center justify-center ">
+                <Image
+                  src={PhoneImage}
+                  alt="Quassama App Dashboard"
+                  className="w-full h-auto"
+                />
              </div>
           </div>
 
