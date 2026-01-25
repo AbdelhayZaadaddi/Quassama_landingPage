@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const features = [
   {
@@ -44,22 +47,64 @@ const features = [
 ];
 
 export default function Features() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" as const },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" as const },
+    },
+  };
+
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-[#3A7068] text-3xl md:text-5xl font-bold mb-12 text-center md:text-left">
+        <motion.h2 
+          className="text-[#3A7068] text-3xl md:text-5xl font-bold mb-12 text-center md:text-left"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={titleVariants}
+        >
           Features Design for Simplicity
-        </h2>
+        </motion.h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div 
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={containerVariants}
+        >
           {features.map((feature, index) => (
-            <div 
+            <motion.div 
               key={index} 
               className={`rounded-2xl p-6 md:p-8 flex flex-col h-full transition-shadow duration-300 hover:shadow-xl border border-gray-100 ${
                 feature.highlight 
                   ? "bg-[#457B74] text-white shadow-lg" 
                   : "bg-white text-gray-900 border-gray-200"
               }`}
+              variants={cardVariants}
+              whileHover={{ y: -5 }}
             >
               <div className="mb-6">
                 {feature.icon}
@@ -70,9 +115,9 @@ export default function Features() {
               <p className={`text-sm leading-relaxed ${feature.highlight ? "text-gray-100" : "text-gray-600"}`}>
                 {feature.description}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
