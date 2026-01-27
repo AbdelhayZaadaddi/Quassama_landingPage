@@ -23,22 +23,6 @@ export default function Footer() {
              <span className="text-[#3A7068] font-semibold text-2xl tracking-wide">Quassama</span>
           </div>
 
-          {/* Navigation Links */}
-          {/* <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            <Link href="/" className="text-gray-500 hover:text-[#3A7068] transition-colors">
-              Home
-            </Link>
-            <Link href="/how-it-works" className="text-gray-500 hover:text-[#3A7068] transition-colors">
-              How it Work
-            </Link>
-            <Link href="/features" className="text-gray-500 hover:text-[#3A7068] transition-colors">
-              Features
-            </Link>
-            <Link href="/use-cases" className="text-gray-500 hover:text-[#3A7068] transition-colors">
-              Use Cases
-            </Link>
-          </nav> */}
-
           {/* Social Icons */}
           <div className="flex items-center gap-4">
             {/* TikTok */}
@@ -48,7 +32,7 @@ export default function Footer() {
               </svg>
             </a>
             
-            {/* YouTube - Swapped from LinkedIn */}
+            {/* YouTube */}
             <a href="https://youtube.com/@quassama?si=87ttXabLEPhLXAGn" target="_blank" rel="noopener noreferrer" className="bg-[#3A7068] p-2 rounded-md hover:opacity-90 transition-opacity">
               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.498-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -64,9 +48,18 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="text-center">
-          <p className="text-[#3A7068] text-sm">
+        {/* Footer Bottom Section */}
+        <div className="text-center flex flex-col gap-3">
+          
+          {/* New "Built By" Line */}
+          <div className="flex items-center justify-center gap-2 text-gray-700 font-medium">
+            <svg className="w-5 h-5 text-[#3A7068]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            <span>Built by a Student Engineer at UCA Marrakech</span>
+          </div>
+
+          <p className="text-[#3A7068] text-sm opacity-80">
             &copy; 2026 Quassama. All rights reserved.
           </p>
         </div>

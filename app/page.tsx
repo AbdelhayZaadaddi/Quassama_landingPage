@@ -4,6 +4,8 @@ import ProblemSolution from "./components/ProblemSolution";
 import Features from "./components/Features";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
+import Reviews from "./components/Reviews";
+import FAQAndCTA from "./components/FAQAndCTA";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Hero />
       <ProblemSolution />
       <Features />
+      <Reviews />
+      <FAQAndCTA />
       <CallToAction />
       <Footer />
     </>
