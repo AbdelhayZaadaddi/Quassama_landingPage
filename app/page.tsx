@@ -6,6 +6,7 @@ import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
 import FAQAndCTA from "./components/FAQAndCTA";
+import ComparisonTable from "./components/ComparisonTable";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ProblemSolution />
       <Features />
       <Reviews />
+      <ComparisonTable />
       <FAQAndCTA />
       <CallToAction />
       <Footer />
