@@ -7,10 +7,12 @@ import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
 import FAQAndCTA from "./components/FAQAndCTA";
 import ComparisonTable from "./components/ComparisonTable";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
     <>
+      <Analytics />
       <Header />
       <Hero />
       <ProblemSolution />
