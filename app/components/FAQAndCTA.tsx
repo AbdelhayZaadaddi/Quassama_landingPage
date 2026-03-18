@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
   {
     question: "Is Quassama free to use?",
-    answer: "Yes! The core features, including expense tracking and basic voice logging, are completely free. We offer a 'Pro' subscription for power users who want unlimited voice entries, cloud sync, and advanced export features."
+    answer: "Yes! The core features, including expense tracking, receipt scanning, and basic voice logging, are completely free. We offer a 'Pro' subscription for power users who want unlimited entries, cloud sync, and advanced export features."
   },
   {
-    question: "How accurate is the Voice Detection?",
-    answer: "Our AI model is trained specifically for Moroccan dialects (Darija), French, and English. It understands context, so you can say '3atit 200dh l Omar 3la l3cha' and it will log it perfectly."
+    question: "How accurate is the Voice Detection & Receipt Scanning?",
+    answer: "Our voice AI is trained specifically for Moroccan dialects (Darija), French, and English. Our receipt scanner intelligently parses amounts, dates, and text from images instantly, making manual entry a thing of the past."
   },
   {
     question: "Is my financial data safe?",

@@ -2,13 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check, X, Mic, Globe, ShieldCheck, User, Zap } from 'lucide-react';
+import { Check, X, Mic, Globe, ShieldCheck, User, Zap, Camera } from 'lucide-react';
 
 const comparisonData = [
     {
         category: "The Quassama Edge",
         items: [
             { name: "Voice-to-Expense AI", quassama: "Full Support", competitor: "None", icon: <Mic className="w-5 h-5" /> },
+            { name: "Receipt Image Scanner", quassama: "Instant Extraction", competitor: "Paid Only", icon: <Camera className="w-5 h-5" /> },
             { name: "Daily Entry Limit", quassama: "Unlimited", competitor: "3 per day", highlight: true, icon: <Zap className="w-5 h-5" /> },
             { name: "Multi-Language (AR/FR/EN)", quassama: true, competitor: "Limited", icon: <Globe className="w-5 h-5" /> },
         ]
