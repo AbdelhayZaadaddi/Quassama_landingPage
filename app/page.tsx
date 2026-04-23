@@ -9,6 +9,7 @@ import Reviews from "./components/Reviews";
 import FAQAndCTA from "./components/FAQAndCTA";
 import ComparisonTable from "./components/ComparisonTable";
 import { Analytics } from "@vercel/analytics/next"
+import SavingGoalsSection from "./components/SavingGoalsSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <ImageScannerFeature />
       <ProblemSolution />
+      <SavingGoalsSection />
       <Features />
       <Reviews />
       <ComparisonTable />
