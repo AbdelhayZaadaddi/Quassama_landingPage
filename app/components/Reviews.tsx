@@ -2,35 +2,7 @@
 
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
-
-// 💡 TIP: Ask 3 friends to try the app and give you a one-sentence quote.
-// Use their real names/photos to make it authentic.
-const reviews = [
-  {
-    id: 1,
-    name: "Omar B.",
-    role: "Student",
-    image: "/avatars/avatar1.png", // specific path or use a placeholder
-    content: "Finally, an expense tracker that understands how we actually spend money. The voice feature is a lifesaver when I'm in a rush.",
-    stars: 5,
-  },
-  {
-    id: 2,
-    name: "Sarah K.",
-    role: "Freelancer",
-    image: "/avatars/avatar2.png", 
-    content: "I used to hate splitting bills with my roommates. Quassama does the math for us instantly. Highly recommend!",
-    stars: 5,
-  },
-  {
-    id: 3,
-    name: "Youssef A.",
-    role: "Early Adopter",
-    image: "/avatars/avatar3.png", 
-    content: "Simple, clean, and fast. I love that I can just speak my expenses instead of typing everything out manually.",
-    stars: 5,
-  }
-];
+import { useTranslations } from 'next-intl';
 
 // Helper to render stars
 const StarRating = ({ rating }: { rating: number }) => {
@@ -52,6 +24,36 @@ const StarRating = ({ rating }: { rating: number }) => {
 };
 
 export default function Reviews() {
+  const t = useTranslations();
+  // 💡 TIP: Ask 3 friends to try the app and give you a one-sentence quote.
+  // Use their real names/photos to make it authentic.
+  const reviews = [
+    {
+      id: 1,
+      name: "Omar B.",
+      role: t('reviews.items.review1.role'),
+      image: "/avatars/avatar1.png", // specific path or use a placeholder
+      content: t('reviews.items.review1.content'),
+      stars: 5,
+    },
+    {
+      id: 2,
+      name: "Sarah K.",
+      role: t('reviews.items.review2.role'),
+      image: "/avatars/avatar2.png", 
+      content: t('reviews.items.review2.content'),
+      stars: 5,
+    },
+    {
+      id: 3,
+      name: "Youssef A.",
+      role: t('reviews.items.review3.role'),
+      image: "/avatars/avatar3.png", 
+      content: t('reviews.items.review3.content'),
+      stars: 5,
+    }
+  ];
+
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -81,7 +83,7 @@ export default function Reviews() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Loved by Early Adopters
+            {t('reviews.title')}
           </motion.h2>
           <motion.p 
             className="text-gray-600 max-w-2xl mx-auto text-lg"
@@ -90,7 +92,7 @@ export default function Reviews() {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            See what users are saying about the new way to track expenses.
+            {t('reviews.description')}
           </motion.p>
         </div>
 
@@ -111,8 +113,8 @@ export default function Reviews() {
             >
               <StarRating rating={review.stars} />
               
-              <p className="text-gray-700 text-lg leading-relaxed mb-8 flex-grow">
-                "{review.content}"
+              <p className="text-gray-700 text-lg leading-relaxed mb-8 grow">
+                {review.content}
               </p>
 
               <div className="flex items-center gap-4 mt-auto">

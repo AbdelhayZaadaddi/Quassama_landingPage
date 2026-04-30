@@ -1,7 +1,7 @@
 {
   "language": {
     "screenTitle": "Langue",
-    "sectionLabel": "Choisissez votre langue",
+    "sectionLabel": "Sélectionnez votre langue",
     "options": {
       "en": {
         "label": "English",
@@ -17,7 +17,266 @@
       }
     }
   },
-  "common": {
+  "header": {
+    "nav": {
+      "home": "Accueil",
+      "howItWorks": "Comment ça marche",
+      "features": "Fonctionnalités",
+      "useCases": "Cas d'usage"
+    },
     "downloadApp": "Télécharger l'app"
+  },
+  "hero": {
+    "title": {
+      "line1P1": "Dites vos",
+      "line1P2": "dépenses.",
+      "line2": "Contrôlez votre",
+      "highlight": "Budget."
+    },
+    "description": "Quassama aide les amis, les familles et les équipes à suivre les dépenses partagées, à diviser les coûts équitablement et à rester organisés — le tout dans une seule application simple.",
+    "buttons": {
+      "googlePlay": {
+        "label": "Télécharger sur",
+        "store": "Google Play"
+      },
+      "appStore": {
+        "label": "Télécharger sur",
+        "store": "App Store"
+      }
+    },
+    "trustSignal": "Crypté et privé • Annulez à tout moment"
+  },
+  "imageScannerFeature": {
+    "badge": "Nouvelle fonctionnalité",
+    "title": {
+      "line1": "Prenez un reçu.",
+      "line2": "Extrayez instantanément."
+    },
+    "description": "Plus de saisie manuelle. Prenez simplement une photo de votre reçu ou facture, et laissez l'IA de Quassama extraire instantanément le montant, la date et la catégorie. Enregistrement de dépenses sans effort en quelques secondes.",
+    "bulletPoints": {
+      "item1": "Extraction instantanée par IA",
+      "item2": "Prend en charge plusieurs formats de reçus",
+      "item3": "Catégorise automatiquement"
+    }
+  },
+  "problemSolution": {
+    "leftCard": {
+      "title": "Les dépenses de groupe sont toujours désordonnées",
+      "description": "La gestion des dépenses partagées conduit souvent à la confusion, aux paiements oubliés et aux divisions injustes. Quassama élimine les frictions en organisant chaque dépense de manière claire et transparente."
+    },
+    "rightCard": {
+      "title": "Une appli. Clarté totale.",
+      "description": "Quassama centralise toutes les dépenses de groupe, calcule automatiquement les soldes et montre qui doit quoi en temps réel — pour que tout le monde soit sur la même longueur d'onde."
+    }
+  },
+  "savingGoals": {
+    "title": {
+      "line1": "Transformez vos rêves",
+      "line2": "en actions quotidiennes."
+    },
+    "description": "Économiser de l'argent n'a jamais été aussi structuré. Fixez un objectif, choisissez votre calendrier, et Quassama le divise en objectifs quotidiens réalisables — pour que vous restiez sur la bonne voie sans stress.",
+    "mockup": {
+      "sectionLabel": "Objectifs d'épargne",
+      "totalSavings": "Épargne totale",
+      "totalSaved": "Total épargné",
+      "goalCompleted": "Objectif atteint !",
+      "goalCompletedSub": "1 000 DH en 30 jours",
+      "statusCompleted": "Terminé",
+      "statusActive": "Actif",
+      "challengeLabel": "Défi 30 jours",
+      "challengePercent": "100% épargné",
+      "challengeProgress": "1 000 / 1 000 DH"
+    },
+    "highlights": {
+      "item1": {
+        "title": "Définissez un objectif et un calendrier",
+        "description": "Définissez combien vous voulez économiser et en combien de jours. Quassama construit votre plan d'épargne quotidien automatiquement."
+      },
+      "item2": {
+        "title": "Rappels intelligents quotidiens",
+        "description": "Obtenez un objectif d'épargne quotidien personnalisé pour ne jamais prendre de retard — petits pas, grands résultats."
+      },
+      "item3": {
+        "title": "Suivez plusieurs objectifs",
+        "description": "Lancez plusieurs défis d'épargne à la fois — pour un voyage, un gadget ou un fonds d'urgence — le tout au même endroit."
+      }
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités conçues pour la simplicité",
+    "items": {
+      "groupExpense": {
+        "title": "Gestion des dépenses de groupe",
+        "description": "Divisez instantanément les factures 50/50 ou par pourcentage sans casse-tête mathématique. Tout le monde reste sur la même longueur d'onde."
+      },
+      "voiceDetection": {
+        "title": "Détection intelligente des dépenses",
+        "description": "Ajoutez des dépenses avec votre voix. Quassama capture les montants et les détails instantanément sans saisie manuelle."
+      },
+      "organization": {
+        "title": "Organisation intelligente des dépenses",
+        "description": "Les dépenses sont automatiquement organisées et préparées pour révision, gardant tout clair et structuré."
+      },
+      "budget": {
+        "title": "Contrôle du budget mensuel",
+        "description": "Définissez un budget mensuel et suivez vos dépenses pour garder le contrôle et éviter les dépenses excessives."
+      },
+      "cloudSync": {
+        "title": "Synchronisation et sauvegarde cloud",
+        "description": "Changez de téléphone sans perdre de données. Vos dépenses sont synchronisées en toute sécurité dans le cloud en temps réel."
+      },
+      "security": {
+        "title": "Sécurisé et privé",
+        "description": "Vos données financières sont cryptées et strictement privées. Nous ne vendons jamais vos données personnelles."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Adoré par les premiers utilisateurs",
+    "description": "Voyez ce que les utilisateurs disent de la nouvelle façon de suivre les dépenses.",
+    "items": {
+      "review1": {
+        "name": "Omar B.",
+        "role": "Étudiant",
+        "content": "Enfin, un tracker de dépenses qui comprend comment nous dépensons vraiment l'argent. La fonctionnalité vocale est un sauveur de vie quand je suis pressé."
+      },
+      "review2": {
+        "name": "Sarah K.",
+        "role": "Freelance",
+        "content": "Je détestais diviser les factures avec mes colocataires. Quassama fait les calculs pour nous instantanément. Je recommande vivement !"
+      },
+      "review3": {
+        "name": "Youssef A.",
+        "role": "Premier utilisateur",
+        "content": "Simple, propre et rapide. J'adore pouvoir simplement dire mes dépenses au lieu de tout taper manuellement."
+      }
+    }
+  },
+  "comparisonTable": {
+    "title": "Pourquoi choisir Quassama ?",
+    "description": "Voyez comment nous nous comparons aux trackers de dépenses traditionnels.",
+    "headers": {
+      "features": "Fonctionnalités",
+      "quassama": "Quassama",
+      "others": "Autres"
+    },
+    "footer": "* Comparaisons basées sur les versions gratuites des principales applications concurrentes.",
+    "categories": {
+      "edge": {
+        "label": "L'avantage Quassama",
+        "items": {
+          "voice": {
+            "name": "IA Voix-vers-Dépense",
+            "quassama": "Support complet",
+            "competitor": "Aucun"
+          },
+          "scanner": {
+            "name": "Scanner d'image de reçu",
+            "quassama": "Extraction instantanée",
+            "competitor": "Payant uniquement"
+          },
+          "limit": {
+            "name": "Limite d'entrée quotidienne",
+            "quassama": "Illimité",
+            "competitor": "3 par jour"
+          },
+          "language": {
+            "name": "Multi-langues (AR/FR/EN)",
+            "quassama": "Oui",
+            "competitor": "Limité"
+          }
+        }
+      },
+      "tracking": {
+        "label": "Suivi personnel et de groupe",
+        "items": {
+          "shared": {
+            "name": "Dépenses de groupe partagées",
+            "quassama": "Oui",
+            "competitor": "Oui"
+          },
+          "private": {
+            "name": "Budget personnel privé",
+            "quassama": "Oui",
+            "competitor": "Non"
+          },
+          "debt": {
+            "name": "Simplification des dettes",
+            "quassama": "Oui",
+            "competitor": "Pro uniquement"
+          }
+        }
+      },
+      "privacy": {
+        "label": "Confidentialité et sécurité",
+        "items": {
+          "encryption": {
+            "name": "Chiffrement de bout en bout",
+            "quassama": "Oui",
+            "competitor": "Standard"
+          },
+          "data": {
+            "name": "Pas de vente de données",
+            "quassama": "Garanti",
+            "competitor": "Caché dans CGU"
+          },
+          "biometric": {
+            "name": "Verrouillage biométrique (Face ID)",
+            "quassama": "Oui",
+            "competitor": "Pro uniquement"
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "description": "Tout ce que vous devez savoir sur Quassama.",
+    "items": {
+      "q1": {
+        "question": "Quassama est-il gratuit ?",
+        "answer": "Oui ! Les fonctionnalités principales, y compris le suivi des dépenses, la numérisation des reçus et l'enregistrement vocal de base, sont entièrement gratuits. Nous proposons un abonnement 'Pro' pour les utilisateurs avancés qui souhaitent des entrées illimitées, une synchronisation cloud et des fonctionnalités d'export avancées."
+      },
+      "q2": {
+        "question": "Quelle est la précision de la détection vocale et de la numérisation des reçus ?",
+        "answer": "Notre IA vocale est spécifiquement entraînée pour les dialectes marocains (Darija), le français et l'anglais. Notre scanner de reçus analyse intelligemment les montants, dates et textes des images instantanément, rendant la saisie manuelle obsolète."
+      },
+      "q3": {
+        "question": "Mes données financières sont-elles sécurisées ?",
+        "answer": "Absolument. Nous utilisons un chiffrement de niveau bancaire pour toutes les données. Vos dépenses sont privées pour vous (et les amis spécifiques avec qui vous choisissez de les partager). Nous ne vendons jamais vos données."
+      },
+      "q4": {
+        "question": "Puis-je l'utiliser hors ligne ?",
+        "answer": "Oui, vous pouvez suivre les dépenses hors ligne. L'application synchronisera automatiquement vos données vers le cloud la prochaine fois que vous vous connecterez à Internet."
+      }
+    }
+  },
+  "callToAction": {
+    "title": "Prêt à simplifier les dépenses de groupe ?",
+    "description": "Rejoignez l'avenir de la gestion des dépenses sans stress avec Quassama.",
+    "buttons": {
+      "googlePlay": {
+        "label": "Télécharger sur",
+        "store": "Google Play"
+      },
+      "appStore": {
+        "label": "Télécharger sur",
+        "store": "App Store"
+      }
+    }
+  },
+  "footer": {
+    "logo": "Quassama",
+    "builtBy": "Construit par un étudiant ingénieur à UCA Marrakech",
+    "copyright": "© 2026 Quassama. Tous droits réservés.",
+    "socials": {
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "instagram": "Instagram"
+    }
+  },
+  "metadata": {
+    "title": "Quassama - Dites vos dépenses",
+    "description": "Suivez les dépenses partagées, divisez les coûts équitablement et restez organisé."
   }
 }

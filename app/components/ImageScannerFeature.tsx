@@ -2,8 +2,10 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function ImageScannerFeature() {
+  const t = useTranslations();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -52,23 +54,23 @@ export default function ImageScannerFeature() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>New Feature</span>
+              <span>{t('imageScannerFeature.badge')}</span>
             </div>
 
             <h2 className="text-[#3A7068] text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Snap a Receipt. <br />
-              <span className="text-gray-900">Extract Instantly.</span>
+              {t('imageScannerFeature.title.line1')} <br />
+              <span className="text-gray-900">{t('imageScannerFeature.title.line2')}</span>
             </h2>
 
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-8">
-              No more manual entry. Just take a photo of your receipt or facture, and let Quassama's AI instantly extract the amount, date, and category. Effortless expense logging in seconds.
+              {t('imageScannerFeature.description')}
             </p>
 
             <ul className="space-y-4 mb-8">
               {[
-                'Instant AI extraction',
-                'Supports multiple receipt formats',
-                'Categorizes automatically'
+                t('imageScannerFeature.bulletPoints.item1'),
+                t('imageScannerFeature.bulletPoints.item2'),
+                t('imageScannerFeature.bulletPoints.item3')
               ].map((item, i) => (
                 <li key={i} className="flex items-center text-gray-700 font-medium">
                   <svg className="w-6 h-6 text-[#3A7068] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,7 +84,7 @@ export default function ImageScannerFeature() {
 
           {/* Abstract Scanning Animation */}
           <motion.div variants={imageVariants} className="order-1 lg:order-2 flex justify-center lg:justify-end py-10 lg:py-0">
-            <div className="relative w-full max-w-sm aspect-[3/4] bg-white rounded-3xl overflow-hidden border border-gray-100 flex items-center justify-center p-8">
+            <div className="relative w-full max-w-sm aspect-3/4 bg-white rounded-3xl overflow-hidden border border-gray-100 flex items-center justify-center p-8">
 
               {/* Receipt Background */}
               <div className="w-full h-full bg-[#fcfcfc] border border-gray-100  rounded-xl p-6 relative">
@@ -114,7 +116,7 @@ export default function ImageScannerFeature() {
 
                 {/* Scanner Highlight Gradient */}
                 <motion.div
-                  className="absolute left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#3A7068]/20 z-10"
+                  className="absolute left-0 w-full h-32 bg-linear-to-b from-transparent to-[#3A7068]/20 z-10"
                   variants={scannerLineVariants}
                   style={{ translateY: '-100%' }}
                 />

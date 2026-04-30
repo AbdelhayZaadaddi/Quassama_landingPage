@@ -17,7 +17,266 @@
       }
     }
   },
-  "common": {
+  "header": {
+    "nav": {
+      "home": "Home",
+      "howItWorks": "How it Work",
+      "features": "Features",
+      "useCases": "Use Cases"
+    },
     "downloadApp": "Download app"
+  },
+  "hero": {
+    "title": {
+      "line1P1": "Speak Your",
+      "line1P2": "Expenses.",
+      "line2": "Control Your",
+      "highlight": "Budget."
+    },
+    "description": "Quassama helps friends, families, and teams track shared expenses, split costs fairly, and stay organized — all in one simple app.",
+    "buttons": {
+      "googlePlay": {
+        "label": "Get it on",
+        "store": "Google Play"
+      },
+      "appStore": {
+        "label": "Download on the",
+        "store": "App Store"
+      }
+    },
+    "trustSignal": "Encrypted & Private • Cancel anytime"
+  },
+  "imageScannerFeature": {
+    "badge": "New Feature",
+    "title": {
+      "line1": "Snap a Receipt.",
+      "line2": "Extract Instantly."
+    },
+    "description": "No more manual entry. Just take a photo of your receipt or facture, and let Quassama's AI instantly extract the amount, date, and category. Effortless expense logging in seconds.",
+    "bulletPoints": {
+      "item1": "Instant AI extraction",
+      "item2": "Supports multiple receipt formats",
+      "item3": "Categorizes automatically"
+    }
+  },
+  "problemSolution": {
+    "leftCard": {
+      "title": "Group Expenses Are Always Messy",
+      "description": "Managing shared expenses often leads to confusion, forgotten payments, and unfair splits. Quassama removes friction by organizing every expense clearly and transparently."
+    },
+    "rightCard": {
+      "title": "One App. Total Clarity.",
+      "description": "Quassama centralizes all group expenses, automatically calculates balances, and shows who owes what in real time — so everyone stays on the same page."
+    }
+  },
+  "savingGoals": {
+    "title": {
+      "line1": "Turn Your Dreams",
+      "line2": "Into Daily Actions."
+    },
+    "description": "Saving money has never felt this structured. Set a target, choose your timeline, and Quassama breaks it down into achievable daily goals — so you stay on track without the stress.",
+    "mockup": {
+      "sectionLabel": "Saving Goals",
+      "totalSavings": "Total Savings",
+      "totalSaved": "Total Saved",
+      "goalCompleted": "Goal Completed!",
+      "goalCompletedSub": "1,000 DH in 30 days",
+      "statusCompleted": "Completed",
+      "statusActive": "Active",
+      "challengeLabel": "30 Days Challenge",
+      "challengePercent": "100% Saved",
+      "challengeProgress": "1,000 / 1,000 DH"
+    },
+    "highlights": {
+      "item1": {
+        "title": "Set a Target & Timeline",
+        "description": "Define how much you want to save and in how many days. Quassama builds your daily saving plan automatically."
+      },
+      "item2": {
+        "title": "Daily Smart Reminders",
+        "description": "Get a personalized daily saving target so you never fall behind your goal — small steps, big results."
+      },
+      "item3": {
+        "title": "Track Multiple Goals",
+        "description": "Run several saving challenges at once — for a trip, a gadget, or an emergency fund — all in one place."
+      }
+    }
+  },
+  "features": {
+    "title": "Features Design for Simplicity",
+    "items": {
+      "groupExpense": {
+        "title": "Group Expense Management",
+        "description": "Instantly split bills 50/50 or by percentage without the math headache. Everyone stays on the same page."
+      },
+      "voiceDetection": {
+        "title": "Smart Expense Detection",
+        "description": "Add expenses using your voice. Quassama captures amounts and details instantly without manual typing."
+      },
+      "organization": {
+        "title": "Smart Expense Organization",
+        "description": "Expenses are automatically organized and prepared for review, keeping everything clear and structured."
+      },
+      "budget": {
+        "title": "Monthly Budget Control",
+        "description": "Set a monthly budget and track your spending to stay in control and avoid overspending."
+      },
+      "cloudSync": {
+        "title": "Cloud Sync & Backup",
+        "description": "Switch phones without losing data. Your expenses are safely synced to the cloud in real-time."
+      },
+      "security": {
+        "title": "Secure & Private",
+        "description": "Your financial data is encrypted and strictly private. We never sell your personal data."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Loved by Early Adopters",
+    "description": "See what users are saying about the new way to track expenses.",
+    "items": {
+      "review1": {
+        "name": "Omar B.",
+        "role": "Student",
+        "content": "Finally, an expense tracker that understands how we actually spend money. The voice feature is a lifesaver when I'm in a rush."
+      },
+      "review2": {
+        "name": "Sarah K.",
+        "role": "Freelancer",
+        "content": "I used to hate splitting bills with my roommates. Quassama does the math for us instantly. Highly recommend!"
+      },
+      "review3": {
+        "name": "Youssef A.",
+        "role": "Early Adopter",
+        "content": "Simple, clean, and fast. I love that I can just speak my expenses instead of typing everything out manually."
+      }
+    }
+  },
+  "comparisonTable": {
+    "title": "Why choose Quassama?",
+    "description": "See how we stack up against traditional expense trackers.",
+    "headers": {
+      "features": "Features",
+      "quassama": "Quassama",
+      "others": "Others"
+    },
+    "footer": "* Comparisons based on free versions of major competitor apps.",
+    "categories": {
+      "edge": {
+        "label": "The Quassama Edge",
+        "items": {
+          "voice": {
+            "name": "Voice-to-Expense AI",
+            "quassama": "Full Support",
+            "competitor": "None"
+          },
+          "scanner": {
+            "name": "Receipt Image Scanner",
+            "quassama": "Instant Extraction",
+            "competitor": "Paid Only"
+          },
+          "limit": {
+            "name": "Daily Entry Limit",
+            "quassama": "Unlimited",
+            "competitor": "3 per day"
+          },
+          "language": {
+            "name": "Multi-Language (AR/FR/EN)",
+            "quassama": "true",
+            "competitor": "Limited"
+          }
+        }
+      },
+      "tracking": {
+        "label": "Personal & Group Tracking",
+        "items": {
+          "shared": {
+            "name": "Shared Group Expenses",
+            "quassama": "true",
+            "competitor": "true"
+          },
+          "private": {
+            "name": "Private Personal Budgeting",
+            "quassama": "true",
+            "competitor": "false"
+          },
+          "debt": {
+            "name": "Debt Simplification",
+            "quassama": "true",
+            "competitor": "Pro Only"
+          }
+        }
+      },
+      "privacy": {
+        "label": "Privacy & Safety",
+        "items": {
+          "encryption": {
+            "name": "End-to-End Encryption",
+            "quassama": "true",
+            "competitor": "Standard"
+          },
+          "data": {
+            "name": "No Data Selling",
+            "quassama": "Guaranteed",
+            "competitor": "Hidden in TOS"
+          },
+          "biometric": {
+            "name": "Biometric Lock (FaceID)",
+            "quassama": "true",
+            "competitor": "Pro Only"
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about Quassama.",
+    "items": {
+      "q1": {
+        "question": "Is Quassama free to use?",
+        "answer": "Yes! The core features, including expense tracking, receipt scanning, and basic voice logging, are completely free. We offer a 'Pro' subscription for power users who want unlimited entries, cloud sync, and advanced export features."
+      },
+      "q2": {
+        "question": "How accurate is the Voice Detection & Receipt Scanning?",
+        "answer": "Our voice AI is trained specifically for Moroccan dialects (Darija), French, and English. Our receipt scanner intelligently parses amounts, dates, and text from images instantly, making manual entry a thing of the past."
+      },
+      "q3": {
+        "question": "Is my financial data safe?",
+        "answer": "Absolutely. We use bank-level encryption for all data. Your expenses are private to you (and the specific friends you choose to share them with). We never sell your data."
+      },
+      "q4": {
+        "question": "Can I use it offline?",
+        "answer": "Yes, you can track expenses offline. The app will automatically sync your data to the cloud the next time you connect to the internet."
+      }
+    }
+  },
+  "callToAction": {
+    "title": "Ready to Simplify Group Expenses?",
+    "description": "Join the future of stress-free expense management with Quassama.",
+    "buttons": {
+      "googlePlay": {
+        "label": "Get it on",
+        "store": "Google Play"
+      },
+      "appStore": {
+        "label": "Download on the",
+        "store": "App Store"
+      }
+    }
+  },
+  "footer": {
+    "logo": "Quassama",
+    "builtBy": "Built by a Student Engineer at UCA Marrakech",
+    "copyright": "© 2026 Quassama. All rights reserved.",
+    "socials": {
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "instagram": "Instagram"
+    }
+  },
+  "metadata": {
+    "title": "Quassama - Speak Your Expenses",
+    "description": "Track shared expenses, split costs fairly, and stay organized."
   }
 }

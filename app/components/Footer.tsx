@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('footer');
+
   return (
     <footer className="bg-white py-12 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +22,9 @@ export default function Footer() {
                   className="object-contain"
                  />
              </div>
-             <span className="text-[#3A7068] font-semibold text-2xl tracking-wide">Quassama</span>
+             <span className="text-[#3A7068] font-semibold text-2xl tracking-wide">
+               {t('logo')}
+             </span>
           </div>
 
           {/* Social Icons */}
@@ -56,11 +60,11 @@ export default function Footer() {
             <svg className="w-5 h-5 text-[#3A7068]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
-            <span>Built by a Student Engineer at UCA Marrakech</span>
+            <span>{t('builtBy')}</span>
           </div>
 
           <p className="text-[#3A7068] text-sm opacity-80">
-            &copy; 2026 Quassama. All rights reserved.
+            {t('copyright')}
           </p>
         </div>
       </div>

@@ -2,48 +2,51 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { Check, X, Mic, Globe, ShieldCheck, User, Zap, Camera } from 'lucide-react';
 
-const comparisonData = [
-    {
-        category: "The Quassama Edge",
-        items: [
-            { name: "Voice-to-Expense AI", quassama: "Full Support", competitor: "None", icon: <Mic className="w-5 h-5" /> },
-            { name: "Receipt Image Scanner", quassama: "Instant Extraction", competitor: "Paid Only", icon: <Camera className="w-5 h-5" /> },
-            { name: "Daily Entry Limit", quassama: "Unlimited", competitor: "3 per day", highlight: true, icon: <Zap className="w-5 h-5" /> },
-            { name: "Multi-Language (AR/FR/EN)", quassama: true, competitor: "Limited", icon: <Globe className="w-5 h-5" /> },
-        ]
-    },
-    {
-        category: "Personal & Group Tracking",
-        items: [
-            { name: "Shared Group Expenses", quassama: true, competitor: true, icon: <User className="w-5 h-5" /> },
-            { name: "Private Personal Budgeting", quassama: true, competitor: false, highlight: true, icon: <ShieldCheck className="w-5 h-5" /> },
-            { name: "Debt Simplification", quassama: true, competitor: "Pro Only", icon: <Zap className="w-5 h-5" /> },
-        ]
-    },
-    {
-        category: "Privacy & Safety",
-        items: [
-            { name: "End-to-End Encryption", quassama: true, competitor: "Standard", icon: <ShieldCheck className="w-5 h-5" /> },
-            { name: "No Data Selling", quassama: "Guaranteed", competitor: "Hidden in TOS", icon: <ShieldCheck className="w-5 h-5" /> },
-            { name: "Biometric Lock (FaceID)", quassama: true, competitor: "Pro Only", icon: <User className="w-5 h-5" /> },
-        ]
-    }
-];
-
 export default function ComparisonTable() {
+    const t = useTranslations('comparisonTable');
+
+    const comparisonData = [
+        {
+            category: t('categories.edge.label'),
+            items: [
+                { name: t('categories.edge.items.voice.name'), quassama: t('categories.edge.items.voice.quassama'), competitor: t('categories.edge.items.voice.competitor'), icon: <Mic className="w-5 h-5" /> },
+                { name: t('categories.edge.items.scanner.name'), quassama: t('categories.edge.items.scanner.quassama'), competitor: t('categories.edge.items.scanner.competitor'), icon: <Camera className="w-5 h-5" /> },
+                { name: t('categories.edge.items.limit.name'), quassama: t('categories.edge.items.limit.quassama'), competitor: t('categories.edge.items.limit.competitor'), highlight: true, icon: <Zap className="w-5 h-5" /> },
+                { name: t('categories.edge.items.language.name'), quassama: true, competitor: t('categories.edge.items.language.competitor'), icon: <Globe className="w-5 h-5" /> },
+            ]
+        },
+        {
+            category: t('categories.tracking.label'),
+            items: [
+                { name: t('categories.tracking.items.shared.name'), quassama: true, competitor: true, icon: <User className="w-5 h-5" /> },
+                { name: t('categories.tracking.items.private.name'), quassama: true, competitor: false, highlight: true, icon: <ShieldCheck className="w-5 h-5" /> },
+                { name: t('categories.tracking.items.debt.name'), quassama: true, competitor: t('categories.tracking.items.debt.competitor'), icon: <Zap className="w-5 h-5" /> },
+            ]
+        },
+        {
+            category: t('categories.privacy.label'),
+            items: [
+                { name: t('categories.privacy.items.encryption.name'), quassama: true, competitor: t('categories.privacy.items.encryption.competitor'), icon: <ShieldCheck className="w-5 h-5" /> },
+                { name: t('categories.privacy.items.data.name'), quassama: t('categories.privacy.items.data.quassama'), competitor: t('categories.privacy.items.data.competitor'), icon: <ShieldCheck className="w-5 h-5" /> },
+                { name: t('categories.privacy.items.biometric.name'), quassama: true, competitor: t('categories.privacy.items.biometric.competitor'), icon: <User className="w-5 h-5" /> },
+            ]
+        }
+    ];
+
     return (
         <section className="bg-white py-16 md:py-24 w-full">
-            <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-350 mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header Section */}
                 <div className="text-center mb-12">
                     <h2 className="text-[#3A7068] text-3xl md:text-5xl font-bold mb-4">
-                        Why choose Quassama?
+                        {t('title')}
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        See how we stack up against traditional expense trackers.
+                        {t('description')}
                     </p>
                 </div>
 
@@ -66,7 +69,7 @@ export default function ComparisonTable() {
                                     <div className="grid grid-cols-2 divide-x divide-gray-100">
                                         {/* Quassama Side */}
                                         <div className={`p-4 flex flex-col items-center justify-center text-center ${item.highlight ? 'bg-[#3A7068]/10' : 'bg-white'}`}>
-                                            <span className="text-xs font-bold text-[#3A7068] mb-1 uppercase">Quassama</span>
+                                            <span className="text-xs font-bold text-[#3A7068] mb-1 uppercase">{t('headers.quassama')}</span>
                                             {typeof item.quassama === "boolean" ? (
                                                 item.quassama ? <Check className="text-[#3A7068] w-6 h-6 stroke-[3px]" /> : <X className="text-red-400 w-6 h-6" />
                                             ) : (
@@ -76,7 +79,7 @@ export default function ComparisonTable() {
 
                                         {/* Competitor Side */}
                                         <div className="p-4 flex flex-col items-center justify-center text-center bg-gray-50/50">
-                                            <span className="text-xs font-bold text-gray-400 mb-1 uppercase">Others</span>
+                                            <span className="text-xs font-bold text-gray-400 mb-1 uppercase">{t('headers.others')}</span>
                                             {typeof item.competitor === "boolean" ? (
                                                 item.competitor ? <Check className="text-gray-400 w-5 h-5" /> : <X className="text-red-300 w-5 h-5" />
                                             ) : (
@@ -98,12 +101,12 @@ export default function ComparisonTable() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <table className="w-full text-left border-collapse table-fixed">
+                    <table className="w-full text-start border-collapse table-fixed">
                         <thead>
                             <tr className="bg-[#3A7068] text-white">
-                                <th className="p-6 text-xl font-semibold w-[40%]">Features</th>
-                                <th className="p-6 text-xl font-bold text-center bg-[#2C5851] w-[30%]">Quassama</th>
-                                <th className="p-6 text-xl font-semibold text-center text-[#3A7068]/20 bg-gray-50 text-gray-400 w-[30%] border-b border-gray-200">Others</th>
+                                <th className="p-6 text-xl font-semibold w-[40%]">{t('headers.features')}</th>
+                                <th className="p-6 text-xl font-bold text-center bg-[#2C5851] w-[30%]">{t('headers.quassama')}</th>
+                                <th className="p-6 text-xl font-semibold text-center bg-gray-50 text-gray-400 w-[30%] border-b border-gray-200">{t('headers.others')}</th>
                             </tr>
                         </thead>
 
@@ -150,7 +153,7 @@ export default function ComparisonTable() {
                 </motion.div>
 
                 <p className="mt-8 text-center text-gray-400 text-sm">
-                    * Comparisons based on free versions of major competitor apps.
+                    {t('footer')}
                 </p>
             </div>
         </section>

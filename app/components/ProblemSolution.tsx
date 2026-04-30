@@ -4,8 +4,10 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import PhoneImage from '../../assets/iPhone14Pro.png';
+import { useTranslations } from 'next-intl';
 
 export default function ProblemSolution() {
+  const t = useTranslations();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -48,7 +50,7 @@ export default function ProblemSolution() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div 
-          className="relative flex flex-col items-center justify-center min-h-[500px] md:min-h-[700px]"
+          className="relative flex flex-col items-center justify-center min-h-125 md:min-h-175"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -78,12 +80,10 @@ export default function ProblemSolution() {
             variants={leftCardVariants}
           >
              <h3 className="text-[#3A7068] text-2xl md:text-3xl font-bold mb-4">
-                Group Expenses Are Always Messy
+                {t('problemSolution.leftCard.title')}
              </h3>
              <p className="text-gray-600 text-lg leading-relaxed">
-                Managing shared expenses often leads to confusion, forgotten payments,
-                and unfair splits. Quassama removes friction by organizing every expense
-                clearly and transparently.
+                {t('problemSolution.leftCard.description')}
              </p>
           </motion.div>
 
@@ -93,12 +93,10 @@ export default function ProblemSolution() {
             variants={rightCardVariants}
           >
              <h3 className="text-[#3A7068] text-2xl md:text-3xl font-bold mb-4">
-                One App. Total Clarity.
+                {t('problemSolution.rightCard.title')}
              </h3>
              <p className="text-gray-600 text-lg leading-relaxed">
-                Quassama centralizes all group expenses, automatically calculates balances,
-                and shows who owes what in real time — so everyone stays on the same
-                page.
+                {t('problemSolution.rightCard.description')}
              </p>
           </motion.div>
 
