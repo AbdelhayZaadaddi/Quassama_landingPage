@@ -120,14 +120,14 @@ export default function SavingGoalsSection() {
           {/* Left: App Screenshot */}
           <motion.div
             variants={cardVariants}
-            className="grid items-center h-full px-3"
+            className="grid grid-cols-1 justify-center items-center h-full px-3"
           >
-            <div className="relative">
+            <div className="relative max-w-3xl">
               {/* Glow effect behind the visual */}
-              <div className="absolute inset-0 bg-[#3A7068]/10 rounded-3xl blur-2xl scale-95 translate-y-4" />
+              <div className="absolute inset-0 bg-[#3A7068]/10 rounded-2xl blur-2xl scale-95 translate-y-4" />
 
               {/* Main mockup card */}
-              <div className="relative rounded-4xl border border-[#d9e7e4] bg-white p-4 shadow-2xl">
+              <div className="relative rounded-4xl border border-[#d9e7e4] bg-white p-4 shadow-sm">
                 <div className="rounded-2xl bg-[#2f6f68] p-4 text-white">
                   <p className="text-sm font-medium text-white/80">
                     Saving Goals
@@ -167,7 +167,7 @@ export default function SavingGoalsSection() {
 
               {/* Floating badge: Total Saved */}
               <motion.div
-                className="absolute -right-4 top-12 bg-white rounded-2xl shadow-xl px-4 py-3 border border-gray-100"
+                className="absolute -right-4 top-12 bg-white rounded-2xl shadow-sm px-4 py-3 border border-gray-100"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -179,7 +179,7 @@ export default function SavingGoalsSection() {
 
               {/* Floating badge: Goal Completed */}
               <motion.div
-                className="absolute -left-4 bottom-20 bg-[#3A7068] rounded-2xl shadow-xl px-4 py-3"
+                className="absolute -left-4 bottom-20 bg-[#3A7068] rounded-2xl shadow-sm px-4 py-3"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -210,7 +210,7 @@ export default function SavingGoalsSection() {
             </div>
 
             {/* Progress bar illustration */}
-            <div className="mt-10 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <div className="mt-10 bg-white rounded-2xl p-5 border border-gray-100 shadow-sm max-w-3xl">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-semibold text-gray-700">
                   30 Days Challenge

@@ -1,0 +1,23 @@
+{
+  "language": {
+    "screenTitle": "Langue",
+    "sectionLabel": "Choisissez votre langue",
+    "options": {
+      "en": {
+        "label": "English",
+        "subLabel": "Anglais"
+      },
+      "fr": {
+        "label": "Français",
+        "subLabel": "Français"
+      },
+      "ar": {
+        "label": "العربية",
+        "subLabel": "Arabe"
+      }
+    }
+  },
+  "common": {
+    "downloadApp": "Télécharger l'app"
+  }
+}
