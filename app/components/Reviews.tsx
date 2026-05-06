@@ -72,7 +72,7 @@ export default function Reviews() {
   };
 
   return (
-    <section className="bg-gray-50 py-16 md:py-24">
+    <section id="reviews" className="bg-gray-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

@@ -29,7 +29,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section id="faq" className="bg-white py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">

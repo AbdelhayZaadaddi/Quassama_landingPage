@@ -37,7 +37,7 @@ export default function ComparisonTable() {
     ];
 
     return (
-        <section className="bg-white py-16 md:py-24 w-full">
+        <section id="compare" className="bg-white py-16 md:py-24 w-full">
             <div className="w-full max-w-350 mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header Section */}

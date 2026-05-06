@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -63,9 +64,25 @@ export default function Footer() {
             <span>{t('builtBy')}</span>
           </div>
 
-          <p className="text-[#3A7068] text-sm opacity-80">
-            {t('copyright')}
-          </p>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <p className="text-[#3A7068] text-sm opacity-80">
+              {t('copyright')}
+            </p>
+            <span className="text-gray-300 text-sm hidden sm:inline">·</span>
+            <Link
+              href="/terms-and-conditions"
+              className="text-[#3A7068] text-sm opacity-80 hover:opacity-100 underline underline-offset-2 transition-opacity"
+            >
+              {t('termsLink')}
+            </Link>
+            <span className="text-gray-300 text-sm hidden sm:inline">·</span>
+            <Link
+              href="/refund-policy"
+              className="text-[#3A7068] text-sm opacity-80 hover:opacity-100 underline underline-offset-2 transition-opacity"
+            >
+              {t('refundLink')}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

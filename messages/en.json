@@ -20,9 +20,13 @@
   "header": {
     "nav": {
       "home": "Home",
-      "howItWorks": "How it Work",
+      "howItWorks": "How It Works",
+      "savings": "Savings",
       "features": "Features",
-      "useCases": "Use Cases"
+      "reviews": "Reviews",
+      "compare": "Compare",
+      "pricing": "Pricing",
+      "faq": "FAQ"
     },
     "downloadApp": "Download app"
   },
@@ -269,10 +273,61 @@
     "logo": "Quassama",
     "builtBy": "Built by a Student Engineer at UCA Marrakech",
     "copyright": "© 2026 Quassama. All rights reserved.",
+    "termsLink": "Terms & Conditions",
+    "refundLink": "Refund Policy",
     "socials": {
       "tiktok": "TikTok",
       "youtube": "YouTube",
       "instagram": "Instagram"
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "description": "Choose the plan that fits your lifestyle. Start free, upgrade anytime.",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "tagline": "Forever free",
+        "cta": "Get Started",
+        "features": {
+          "f1": "Basic expense tracking",
+          "f2": "Limited groups",
+          "f3": "Manual entry only",
+          "f4": "Ads supported",
+          "f5": "Up to 10 AI decisions/month"
+        }
+      },
+      "personal": {
+        "name": "Personal",
+        "price": "$2.99",
+        "period": "/month",
+        "badge": "Most Popular",
+        "trial": "3 Days Free Trial",
+        "cta": "Start Free Trial",
+        "features": {
+          "f1": "Unlimited groups & expenses",
+          "f2": "Voice AI — 60 min/month / 7 min/day",
+          "f3": "Receipt scanning — 50 scans/month / 10/day",
+          "f4": "Unlimited AI decisions",
+          "f5": "No ads"
+        }
+      },
+      "family": {
+        "name": "Couple / Family",
+        "price": "$6.99",
+        "period": "/month",
+        "badge": "Recommended",
+        "cta": "Get Started",
+        "features": {
+          "f1": "Everything in Personal",
+          "f2": "Voice AI — 350 min/month / 15 min/day",
+          "f3": "Receipt scanning — 100 scans/month / 10/day",
+          "f4": "Advanced analytics",
+          "f5": "Early access to new features"
+        }
+      }
     }
   },
   "metadata": {

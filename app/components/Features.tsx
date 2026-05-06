@@ -98,7 +98,7 @@ export default function Features() {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section id="features" className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 
           className="text-[#3A7068] text-3xl md:text-5xl font-bold mb-12 text-center md:text-start"
