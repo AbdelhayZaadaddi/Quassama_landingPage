@@ -264,7 +264,7 @@ export default function RefundPolicy() {
                           {para}
                         </p>
                       ))}
-                      {sub.bullets && (
+                      {"bullets" in sub && sub.bullets && (
                         <ul className="my-3 space-y-2">
                           {sub.bullets.map((item, i) => (
                             <li key={i} className="flex gap-3 text-gray-600 text-sm leading-relaxed">
