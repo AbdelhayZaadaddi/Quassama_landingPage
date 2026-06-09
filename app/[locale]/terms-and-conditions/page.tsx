@@ -51,10 +51,11 @@ const SECTIONS = [
         ],
       },
       {
-        heading: "4.2 Billing & Renewal",
+        heading: "4.2 Billing, Renewal & Refunds",
         content: [
-          `Paid subscriptions are billed monthly through the applicable app store (Apple App Store or Google Play Store) on the date you subscribed. Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date.`,
-          `You can manage or cancel your subscription at any time through your device's app store account settings. Cancellation takes effect at the end of the current billing period; no partial refunds are issued for unused time.`,
+          `Paid subscriptions are billed monthly through Paddle, our payment processor, on the date you subscribed. Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date.`,
+          `You can manage or cancel your subscription at any time through your account settings at app.quassama.com or by contacting us at abdezaadaddi06@gmail.com.`,
+          `We offer a full refund on all purchases made within 30 days, no questions asked. To request a refund, contact us at abdezaadaddi06@gmail.com with your order details.`,
         ],
       },
       {
