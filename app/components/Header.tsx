@@ -75,6 +75,14 @@ export default function Header() {
           {/* Desktop right side */}
           <div className="hidden lg:flex items-center gap-3">
             <LanguageSwitcher />
+            <a
+              href="https://app.quassama.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-md text-sm font-medium text-white/85 border border-white/30 hover:text-white hover:border-white/60 hover:bg-white/10 transition-colors"
+            >
+              {t('loginAccount')}
+            </a>
             <button
               onClick={handleDownloadClick}
               className="bg-[#F3E5AB] text-[#2A524D] cursor-pointer px-5 py-2 rounded-md text-sm font-semibold hover:bg-[#ece0a6] transition-colors"
@@ -117,7 +125,16 @@ export default function Header() {
                 {t(`nav.${key}`)}
               </a>
             ))}
-            <div className="pt-3 border-t border-white/10 mt-2">
+            <div className="pt-3 border-t border-white/10 mt-2 space-y-2">
+              <a
+                href="https://app.quassama.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+                className="block w-full text-center border border-white/30 text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white/10 transition-colors"
+              >
+                {t('loginAccount')}
+              </a>
               <button
                 onClick={() => { handleDownloadClick(); closeMenu(); }}
                 className="w-full bg-[#F3E5AB] text-[#2A524D] px-6 py-2.5 rounded-md text-sm font-semibold hover:bg-[#ece0a6] transition-colors"
