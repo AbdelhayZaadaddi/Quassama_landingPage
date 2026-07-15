@@ -133,6 +133,15 @@
       "security": {
         "title": "Sécurisé et privé",
         "description": "Vos données financières sont cryptées et strictement privées. Nous ne vendons jamais vos données personnelles."
+      },
+      "aiAssistant": {
+        "title": "Assistant IA conversationnel",
+        "description": "Discutez avec votre assistant IA personnel et posez toutes vos questions sur votre budget, vos dépenses, vos revenus ou vos objectifs d'épargne — obtenez des réponses claires et personnalisées instantanément.",
+        "chat": {
+          "question": "Combien ai-je dépensé en courses ce mois-ci ?",
+          "answer": "Vous avez dépensé 240 $ sur votre budget courses de 300 $ — soit 80 %. Vous êtes en bonne voie pour économiser 60 $ ce mois-ci ! 🎯",
+          "placeholder": "Posez une question sur votre budget..."
+        }
       }
     }
   },
@@ -312,7 +321,8 @@
           "f2": "IA Vocale — 60 min/mois / 7 min/jour",
           "f3": "Numérisation de reçus — 50 scans/mois / 10/jour",
           "f4": "Décisions IA illimitées",
-          "f5": "Sans publicité"
+          "f5": "Sans publicité",
+          "f6": "Chat assistant IA — budget, dépenses et objectifs d'épargne"
         }
       },
       "family": {
@@ -326,7 +336,8 @@
           "f2": "IA Vocale — 350 min/mois / 15 min/jour",
           "f3": "Numérisation de reçus — 100 scans/mois / 10/jour",
           "f4": "Analyses avancées",
-          "f5": "Accès anticipé aux nouvelles fonctionnalités"
+          "f5": "Accès anticipé aux nouvelles fonctionnalités",
+          "f6": "Chat assistant IA"
         }
       }
     }

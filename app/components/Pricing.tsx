@@ -36,12 +36,10 @@ const cardVariants = {
   },
 };
 
-const FEATURE_KEYS = ['f1', 'f2', 'f3', 'f4', 'f5'] as const;
-
 const plans = [
-  { key: 'free',     highlighted: false, recommended: false, hasTrial: false },
-  { key: 'personal', highlighted: true,  recommended: false, hasTrial: true  },
-  { key: 'family',   highlighted: false, recommended: true,  hasTrial: false },
+  { key: 'free',     highlighted: false, recommended: false, hasTrial: false, featureKeys: ['f1', 'f2', 'f3', 'f4', 'f5'] },
+  { key: 'personal', highlighted: true,  recommended: false, hasTrial: true,  featureKeys: ['f1', 'f2', 'f3', 'f4', 'f5', 'f6'] },
+  { key: 'family',   highlighted: false, recommended: true,  hasTrial: false, featureKeys: ['f1', 'f2', 'f3', 'f4', 'f5', 'f6'] },
 ] as const;
 
 export default function Pricing() {
@@ -169,7 +167,7 @@ export default function Pricing() {
 
                 {/* Features */}
                 <ul className="flex flex-col gap-3 flex-1 mb-8">
-                  {FEATURE_KEYS.map((fk) => (
+                  {plan.featureKeys.map((fk) => (
                     <li key={fk} className="flex items-start gap-3">
                       <span
                         className={

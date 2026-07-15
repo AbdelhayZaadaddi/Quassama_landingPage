@@ -133,6 +133,15 @@
       "security": {
         "title": "Secure & Private",
         "description": "Your financial data is encrypted and strictly private. We never sell your personal data."
+      },
+      "aiAssistant": {
+        "title": "AI Assistant Chat",
+        "description": "Chat with your personal AI assistant and ask anything about your budget, expenses, income, or saving goals — get clear, personalized answers instantly.",
+        "chat": {
+          "question": "How much did I spend on groceries this month?",
+          "answer": "You've spent $240 of your $300 groceries budget — that's 80%. You're on track to save $60 this month! 🎯",
+          "placeholder": "Ask about your budget..."
+        }
       }
     }
   },
@@ -312,7 +321,8 @@
           "f2": "Voice AI — 60 min/month / 7 min/day",
           "f3": "Receipt scanning — 50 scans/month / 10/day",
           "f4": "Unlimited AI decisions",
-          "f5": "No ads"
+          "f5": "No ads",
+          "f6": "AI assistant chat — ask about your budget, expenses & saving goals"
         }
       },
       "family": {
@@ -326,7 +336,8 @@
           "f2": "Voice AI — 350 min/month / 15 min/day",
           "f3": "Receipt scanning — 100 scans/month / 10/day",
           "f4": "Advanced analytics",
-          "f5": "Early access to new features"
+          "f5": "Early access to new features",
+          "f6": "AI assistant chat"
         }
       }
     }
